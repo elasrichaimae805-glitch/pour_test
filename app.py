@@ -130,7 +130,7 @@ def index():
 # ===== API Produits =====
 @app.route("/api/products")
 def get_products():
-    category = chaimae.request.args.get("category", "all")
+    category = request.args.get("category", "all")
     search = request.args.get("search", "").lower().strip()
 
     result = products
