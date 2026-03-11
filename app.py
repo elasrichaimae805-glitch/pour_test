@@ -122,13 +122,15 @@ carts = {}
 
 
 # ===== Routes Pages =====
-
+@app.route("/")
+def index():
+    return send_from_directory(".", "index.html")
 
 
 # ===== API Produits =====
 @app.route("/api/products")
 def get_products():
-    category = request.args.get("category", "all")
+    category = chaimae.request.args.get("category", "all")
     search = request.args.get("search", "").lower().strip()
 
     result = products
