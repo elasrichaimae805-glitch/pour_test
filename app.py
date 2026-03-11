@@ -122,9 +122,7 @@ carts = {}
 
 
 # ===== Routes Pages =====
-@app.route("/")
-def index():
-    return send_from_directory(".", "index.html")
+
 
 
 # ===== API Produits =====
