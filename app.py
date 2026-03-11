@@ -110,21 +110,7 @@ products = [
         "id": 12,
         "name": "Bracelet Acier Inox",
         "category": "accessories",
-        "price": 25.00,
-        "oldPrice": None,
-        "desc": "Acier inoxydable 316L, fermoir magnétique, unisexe.",
-        "img": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=300&fit=crop"
-    }
-]
-
-# Stockage des paniers en mémoire (par session via un ID)
-carts = {}
-
-
-# ===== Routes Pages =====
-@app.route("/")
-def index():
-    return send_from_directory(".", "index.html")
+     qsdqsdqsdqs qsdsqdory(".", "index.html")
 
 
 # ===== API Produits =====
